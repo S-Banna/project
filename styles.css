@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	background-color: rgb(245, 245, 245);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 17px;
+}
+
+header {
+	padding: 2% 0%;
+	display: flex;
+	width: 100%;
+	background-color: rgb(153, 192, 246);
+	flex-direction: column;
+	gap: 0px;
+	align-items: center;
+	justify-content: center;
+}
+
+.headCont {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header * {
+	margin: 0;
+}
+
+.mainCont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	gap: 10px;
+}
+
+.cont {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	padding-top: 10px;
+}
+
+.cont * {
+	margin: 0;
+}
+
+.textCont1,
+.textCont2 {
+	width: 30%;
+	padding: 10px;
+}
+
+.imageCont {
+	width: 100%;
+	position: relative;
+}
+
+.imageCont img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.buttonCont {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+}
+
+.buttonCont button {
+	position: absolute;
+	width: 100px;
+	background-color: rgba(255, 255, 255, 0);
+	border: 0px solid white;
+	cursor: pointer;
+	transition: all ease-in-out 0.1s;
+}
+
+.buttonCont button:hover {
+	position: absolute;
+	width: 100px;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+p,
+#final {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease-in-out 0.3s;
+	transform: translateY(20px);
+}
+
+#final {
+	padding: 20px;
+	margin: 10px;
+}
+
+footer {
+	background-color: rgb(153, 192, 246);
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	padding: 2% 0% 0.5% 0%;
+	width: 100%;
+}
+
+.footCont {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	padding-right: 20px;
+}
+
+footer * {
+	margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.mainCont {
+		flex-direction: column;
+		align-items: center;
+		gap: 0px;
+	}
+
+	.textCont1,
+	.textCont2 {
+		width: 90%;
+	}
+
+	.textCont2 {
+		order: 3;
+	}
+
+	.textCont1 {
+		order: 2;
+	}
+
+	#final {
+		display: none;
+	}
+
+	.cont {
+		width: 90%;
+		order: 1;
+	}
+}
