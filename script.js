@@ -44,21 +44,21 @@ function playAnimation() {
 		ethos.style.visibility = "visible";
 		ethos.style.opacity = "1";
 		ethos.style.transform = "translateY(0)";
-	}, 6000);
+	}, 10000);
 	setTimeout(() => {
 		pathos.style.visibility = "visible";
 		pathos.style.opacity = "1";
 		pathos.style.transform = "translateY(0)";
-	}, 9000);
+	}, 14000);
 	setTimeout(() => {
 		kairos.style.visibility = "visible";
 		kairos.style.opacity = "1";
 		kairos.style.transform = "translateY(0)";
-	}, 16000);
+	}, 23000);
 	setTimeout(() => {
 		final.style.visibility = "visible";
 		final.style.opacity = "1";
 		final.style.transform = "translateY(0)";
 		final.style.display = "block";
-	}, 19000);
+	}, 26000);
 }
